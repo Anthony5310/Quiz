@@ -1,0 +1,26 @@
+.content {
+    font-family: sans-serif;
+
+    .question {
+        display: block;
+        //border: 2px solid yellow;
+        margin: 0;
+        padding: 10px;
+    }
+    
+    .suggestions {
+        //border: 2px solid yellow;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+        .suggestion {                   
+            margin: 5px;
+            width: 100%;
+            @media screen and (min-width: 550px) {
+                flex: 0 1 48%;
+            }            
+        }
+    }
+}

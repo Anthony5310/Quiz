@@ -1,1 +1,7 @@
-<p>question works!</p>
+<div class="content">
+    <p class="question">{{question.value}}</p>
+    <div class="suggestions">
+        <app-answer class="suggestion" *ngFor="let suggestion of question.suggestions" [value]="suggestion"></app-answer>
+    </div>
+</div>
+

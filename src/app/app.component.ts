@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IQuestion } from './core/model/question.model';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'quiz-web';
+  title = 'Summer Quiz';
+  question: IQuestion = {
+      qId: "1", 
+      value: "Comment je m'appelle ?", 
+      suggestions: ['Anthony', 'Florian', 'Maxime', 'Antoine']
+  }
 }
